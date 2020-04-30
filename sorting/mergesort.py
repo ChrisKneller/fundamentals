@@ -50,11 +50,62 @@ def amerge(l1, l2):
 
     return l3
 
-# TODO: fix alt version to work without creating new lists/deques
+def altmergesort(mylist):
+    '''
+    Return a new list containing all items from the iterable in ascending order.
 
-# def altmergesort(mylist):
-#     l = len(mylist)
-#     return mylist if l <= 1 else submergesort(mylist,0,l-1, l)
+    This is an in-place version which relies on using pointers. It was created to
+    reduce the space complexity to O(n) i.e. to use one common extra array for all merges.
+    '''
+    l = len(mylist)
+    holdlist = [None] * l
+    if l <= 1:
+        return mylist
+    else:
+        submergesort(mylist,holdlist,0,l-1)
+        return mylist
+
+def submergesort(mylist,holdlist,left,right):
+
+    if left == right:
+        return (left,right)
+
+    mid = (left + right) // 2
+
+    ml1 = submergesort(mylist,holdlist,left=left,right=mid)
+    ml2 = submergesort(mylist,holdlist,left=mid+1,right=right)
+
+    ml = bmerge(mylist, holdlist, ml1, ml2)
+
+    return ml
+
+def bmerge(mylist, holdlist, l1, l2):
+
+    for i in range(l1[0], l1[1] + 1):
+        holdlist[i] = mylist[i]
+
+    l1curr = l1[0]
+    l2curr = l2[0]
+    curr = l1[0]
+
+    while l1curr <= l1[1] and l2curr <= l2[1] and curr <= l2[1]:
+        if holdlist[l1curr] <= mylist[l2curr]:
+            mylist[curr] = holdlist[l1curr]
+            l1curr += 1
+            curr += 1
+        else:
+            mylist[curr] = mylist[l2curr]
+            l2curr += 1
+            curr += 1
+
+    while l1curr <= l1[1] and curr <= l2[1]:
+        mylist[curr] = holdlist[l1curr]
+        l1curr += 1
+        curr += 1
+
+    return (l1[0], l2[1])
+
+# altmergesort([5,4,3,2,1])
 
 # def submergesort(mylist, left,right, final_length=False):
 #     if not final_length:
