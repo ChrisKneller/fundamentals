@@ -48,7 +48,7 @@ First divide the list into the smallest unit (1 element), then compare each elem
 
 #### Key details
 Best case|Average case|Worst case
--|-|-
+:-:|:-:|:-:
 O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
 
 #### Diagram
