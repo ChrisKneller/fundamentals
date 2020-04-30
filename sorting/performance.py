@@ -48,6 +48,7 @@ def test_sort_algos(
                 end = time.perf_counter()
                 assert new_list == sorted(gen_list), f"Result is not sorted. Your {name} algorithm failed."
                 time_taken = end-start
+                print(f"List of length {i*spacing} sorted with {name} in {time_taken}s")
                 writer.writerow([len(new_list), time_taken, name])
 
 
