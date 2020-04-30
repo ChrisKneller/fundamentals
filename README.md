@@ -12,8 +12,8 @@ Selection sort|-|-|-|-|-|-|-
 Insertion sort|-|-|-|-|-|-|-
 Bubble sort|-|-|-|-|-|-|-
 Shell sort|-|-|-|-|-|-|-
-[Merge sort](https://github.com/ChrisKneller/fundamentals#merge-sort)|O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
-[Quick sort](https://github.com/ChrisKneller/fundamentals#quick-sort)|O(*n* log *n*)|O(2*n* log *n*)|O(½ *n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
+[Merge sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)|O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
+[Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(2*n* log *n*)|O(½ *n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
 Heap sort|-|-|-|-|-|-|-
 
 \* Further information can be seen in the sections dedicated to each sort.
