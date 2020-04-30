@@ -37,7 +37,7 @@ def amerge(l1, l2):
         l2 = deque(l2)
     
     while l1 and l2:
-        if l1[0] < l2[0]:
+        if l1[0] <= l2[0]:
             l3.append(l1.popleft())
         else:
             l3.append(l2.popleft())
