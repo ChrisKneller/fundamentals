@@ -59,6 +59,9 @@ O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
 #### My implementation(s)
 [Python, using deques](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)
 
+#### References
+[David Taylor: Algorithms with Attitude](https://www.youtube.com/watch?v=k3oezbZgfDs) (fantastic explainer video on optimisations etc.)
+
 ### Quick Sort
 
 #### Summary
