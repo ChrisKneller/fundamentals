@@ -1,15 +1,15 @@
 import random
-from mergesort import mergesort
 import time
 import csv
+from mergesort import mergesort
 
-def generate_list(size, max_multiplier: int = 10):
+def generate_list(length: int, max_multiplier: int = 10) -> list:
     '''
     Return a list of input size with randomly generated values between 0 and the size * max_multiplier.
 
     E.g. if the input size is 100 and the max_multiplier is 10, the values will be between 0 and 100*10=1000
     '''
-    return [random.randint(0,size*10) for _ in range(size)]
+    return [random.randint(0,length*max_multiplier) for _ in range(length)]
 
 sorting_algorithms = {
     'builtin': sorted,
@@ -17,7 +17,7 @@ sorting_algorithms = {
 }
 
 def test_sort_algos(
-    output_file: str = 'mergesort_test_10.csv', 
+    output_file: str = 'csv/sorting_comparison.csv', 
     write_method: str = 'a',
     num_lists: int = 50,
     spacing: int = 10,
@@ -45,8 +45,8 @@ def test_sort_algos(
                 
                 start = time.perf_counter()
                 new_list = sort(gen_list)
-                assert new_list == sorted(gen_list), f"Result is not sorted. Your {name} algorithm failed."
                 end = time.perf_counter()
+                assert new_list == sorted(gen_list), f"Result is not sorted. Your {name} algorithm failed."
                 time_taken = end-start
                 writer.writerow([len(new_list), time_taken, name])
 
