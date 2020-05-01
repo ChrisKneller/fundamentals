@@ -18,6 +18,10 @@ Heap sort|-|-|-|-|-|-|-
 
 \* Further information can be seen in the sections dedicated to each sort.
 
+Comparison of my implementations:
+
+![Sorting comparison scatter plot](/sorting/plots/sorting_comparison.png)
+
 ## Data structures
 
 ### Linked Lists
