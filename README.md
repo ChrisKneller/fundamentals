@@ -7,7 +7,7 @@ A repo to keep track of my understanding of some CS fundamentals. I will be addi
 ### Sorting algorithms
 
 Algorithm|Best case|Average case|Worst case|Stable|In place|Code|Remarks
--|-|-|-|-|-|-|-
+:-|:-:|:-:|:-:|:-:|:-:|:-:|:-
 Selection sort|-|-|-|-|-|-|-
 Insertion sort|-|-|-|-|-|-|-
 Bubble sort|-|-|-|-|-|-|-
@@ -18,7 +18,7 @@ Heap sort|-|-|-|-|-|-|-
 
 \* Further information can be seen in the sections dedicated to each sort.
 
-#### Comparison of my implementations
+#### Comparison of implementations
 ![Sorting comparison scatter plot](/sorting/plots/sorting_comparison.png)
 
 ## Data structures
@@ -135,25 +135,43 @@ def traverse_post_order(tree):
 - It is used to balance out two branches of different depths
 - One node gets shifted up, one node shited down and other nodes may be connected to different parents
 - They are very useful for balancing trees for performance
-- It may be easier to think of them as "clockwise" (right) and "anticlockwise" (left) rotations
+- It may be easier to think of them as "clockwise" (**right**) and "anticlockwise" (**left**) rotations
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tree_rotation.png" alt="Left and right rotations on a binary tree" height="200">
 
 - It doesn't matter whether the top node in a rotation has parents
 - Rotations can therefore be used at any level of a tree
 
-##### AVL trees
+#### AVL trees
 
 ![AVL tree construction](https://upload.wikimedia.org/wikipedia/commons/f/fd/AVL_Tree_Example.gif)
 
-- AVL trees are self-balancing trees that, when adding nodes, look for a chain of 3 nodes that are singly linked
+- AVL trees are **self-balancing** trees that, when adding nodes, look for a chain of 3 nodes that are singly linked
 - Appropriate rotations are applied when this happens to turn those nodes into a parent and two children
 - AVL trees are good at balancing, but often require multiple rotations per operation (insertion/deletion)
+- Perfect for when the tree will be created only once and not modified, but the data will be accessed often
 
-##### Red-black trees
+#### Red-black BS trees
 
-- Red-black trees are also self-balancing
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/750px-Red-black_tree_example.svg.png" alt="Red-black tree" height="200">
 
+- Red-black trees are also self-balancing and are less strict than AVL trees
+- The result is a slightly slower average lookup, but faster insertion and deletion
+- All nodes in the tree are either red or black (surprisingly)
+- Newly inserted nodes are always red; depending on the surrounding nodes they will be rotated or repainted according to different contraints
+- The result *will not* be a perfectly balanced tree
+- However, it will have a *guaranteed worst case runtime* of O(log *n*) for **searching**, **insertion** and **deletion**
+- It is guaranteed to have a maximum height of 2 log(*n* + 1)
+- Any path from a given node to any of its descendant NIL nodes goes through the same number of black nodes
+- 
+
+#### Quick reference tree table
+
+Tree type|Worst case:|Search|Insert|Delete|Average case:|Search|Insert|Delete
+:-|-|:-:|:-:|:-:|-|:-:|:-:|:-:
+BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
+AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(*n*)|O(*n*)
+Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(*n*)|O(*n*)
 
 ### Heaps
 
