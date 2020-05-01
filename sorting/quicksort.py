@@ -1,3 +1,5 @@
+import random
+
 def quicksort(iterable):
     '''
     Return a new list containing all items from the iterable in ascending order.
@@ -12,11 +14,26 @@ def quicksort(iterable):
 
     return quicksorter(iterable,low,high)
 
-def quicksorter(iterable, low, high):
+def quicksortrand(iterable):
+    '''
+    Return a new list containing all items from the iterable in ascending order.
+
+    This version takes the pivot to be a random item in the iterable.
+    '''
+    low = 0
+    high = len(iterable)-1
+
+    if high <= 0:
+        return iterable
+
+    return quicksorter(iterable,low,high,ptype='rand')
+
+
+def quicksorter(iterable, low, high, ptype='mid'):
     if low >= high:
         return
 
-    pivot = pivoter(iterable, low, high)
+    pivot = pivoter(iterable, low, high, ptype)
 
     quicksorter(iterable, low, pivot)
     
@@ -24,9 +41,12 @@ def quicksorter(iterable, low, high):
     
     return iterable
 
-def pivoter(iterable, low, high):
+def pivoter(iterable, low, high, ptype='mid'):
     
-    pivot = low + (high-low)//2
+    if ptype == 'mid':
+        pivot = low + (high-low)//2
+    elif ptype == 'rand':
+        pivot = random.randint(low, high)
 
     i = low - 1
 
