@@ -110,6 +110,23 @@ def traverse_post_order(tree):
         print(tree.getRootVal())
 ```
 
+#### Binary search trees
+
+- A binary tree where, for every node, all children in the left sub-tree contain smaller values and all children in the right sub-tree  contain larger values
+- BSTs therefore cannot have duplicate elements
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1920px-Binary_search_tree.svg.png" alt="Binary search tree" HEIGHT="200">
+
+- For best performance a BST should be well-balanced (i.e. as much as possible, the left and right branches at a particular position are "filled up" at each level without gaps)
+- Essentially, we want it to be *complete*
+- The time taken to find a node will be proportional to the node's depth
+- Therefore deeper trees will have longer worst case search runtimes
+- If the tree is complete (or at least balanced) then the depth of the tree will be approximatel equal to log<sub>2</sub>(*n*) and so the runtime will be O(log *n*)
+- The worst case scenario for searching a BST is a "maximally unbalanced tree" i.e. where the BST gets reduced to a simple linked list. In this case the runtime goes to O(*n*)
+- The simplest way to construct a BST is to initialise it with a single root node and repeatedly insert numbers into the tree
+- To maintain the BST property, there will only ever be one position in which a node can be inserted
+- Somewhat unintuitively, if you add pre-sorted data into a BST, it will have maximal inefficiency, O(*n*)
+
 ### Heaps
 
 ### Vectors / ArrayLists
