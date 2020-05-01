@@ -170,8 +170,8 @@ def traverse_post_order(tree):
 Tree type|Worst case:|Search|Insert|Delete|Average case:|Search|Insert|Delete
 :-|-|:-:|:-:|:-:|-|:-:|:-:|:-:
 BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
-AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(*n*)|O(*n*)
-Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(*n*)|O(*n*)
+AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
+Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
 
 ### Heaps
 
