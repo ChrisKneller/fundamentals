@@ -127,6 +127,34 @@ def traverse_post_order(tree):
 - To maintain the BST property, there will only ever be one position in which a node can be inserted
 - Somewhat unintuitively, if you add pre-sorted data into a BST, it will have maximal inefficiency, O(*n*)
 
+#### Tree rotations
+
+![Binary tree rotation animation](https://upload.wikimedia.org/wikipedia/commons/3/31/Tree_rotation_animation_250x250.gif)
+
+- A tree rotation is an operation on a binary tree that changes the structure of the tree without affecting the order of the elements (in-order traversal)
+- It is used to balance out two branches of different depths
+- One node gets shifted up, one node shited down and other nodes may be connected to different parents
+- They are very useful for balancing trees for performance
+- It may be easier to think of them as "clockwise" (right) and "anticlockwise" (left) rotations
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tree_rotation.png" alt="Left and right rotations on a binary tree" height="200">
+
+- It doesn't matter whether the top node in a rotation has parents
+- Rotations can therefore be used at any level of a tree
+
+##### AVL trees
+
+![AVL tree construction](https://upload.wikimedia.org/wikipedia/commons/f/fd/AVL_Tree_Example.gif)
+
+- AVL trees are self-balancing trees that, when adding nodes, look for a chain of 3 nodes that are singly linked
+- Appropriate rotations are applied when this happens to turn those nodes into a parent and two children
+- AVL trees are good at balancing, but often require multiple rotations per operation (insertion/deletion)
+
+##### Red-black trees
+
+- Red-black trees are also self-balancing
+
+
 ### Heaps
 
 ### Vectors / ArrayLists
