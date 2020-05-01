@@ -6,7 +6,7 @@ import numpy as np
 from itertools import cycle
 from performance import sorting_algorithms
 
-def plot(fname='sorting_comparison'):
+def plot(fname='sorting_comparison-5'):
 
     csv_folder = 'csv'
     plots_folder = 'plots'
@@ -29,6 +29,7 @@ def plot(fname='sorting_comparison'):
 
     plt.xlabel('Number of items in list')
     plt.ylabel('Time to sort (s)')
+    plt.ylim(0,1)
     plt.title('Time taken to sort different sized lists with different algorithms')
     plt.legend()
     plt.savefig(os.path.join(plots_folder, fname + image_extension))

@@ -1,26 +1,33 @@
 import random
 import time
 import csv
-from mergesort import mergesort
+from mergesort import mergesort, altmergesort
+from quicksort import quicksort, quicksortrand
 
 def generate_list(length: int, max_multiplier: int = 10) -> list:
     '''
-    Return a list of input size with randomly generated values between 0 and the size * max_multiplier.
+    Return a list of input size with randomly generated values between start and the length * max_multiplier.
 
     E.g. if the input size is 100 and the max_multiplier is 10, the values will be between 0 and 100*10=1000
     '''
     return [random.randint(0,length*max_multiplier) for _ in range(length)]
 
 sorting_algorithms = {
-    'builtin': sorted,
-    'mergesort': mergesort,
+    # 'builtin': sorted,
+    'mergesort-deques': mergesort,
+    'mergesort-pointers': altmergesort,
+    'quicksort-midpivot': quicksort,
+    'quicksort-randpivot': quicksortrand,
 }
 
+# TODO: parallelize
+
 def test_sort_algos(
-    output_file: str = 'csv/sorting_comparison.csv', 
+    output_file: str = 'csv/sorting_comparison-5.csv', 
     write_method: str = 'a',
-    num_lists: int = 50,
-    spacing: int = 10,
+    start = 0,
+    num_lists: int = 500,
+    spacing: int = 100,
     sorting_algorithms=sorting_algorithms):
 
     '''
@@ -37,7 +44,7 @@ def test_sort_algos(
         if write_method == 'w':
             writer.writerow(['num_items', 'time(s)', 'algorithm'])
         
-        for i in range(num_lists):
+        for i in range(start, start+num_lists):
 
             gen_list = generate_list(i*spacing)
 

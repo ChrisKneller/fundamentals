@@ -1,4 +1,5 @@
 from collections import deque
+import numpy as np
 
 def mergesort(iterable, final_length=False):
     '''
@@ -53,7 +54,6 @@ def amerge(l1, l2):
 def altmergesort(mylist):
     '''
     Return a new list containing all items from the iterable in ascending order.
-
     This is an in-place version which relies on using pointers. It was created to
     reduce the space complexity to O(n) i.e. to use one common extra array for all merges.
     '''
@@ -81,8 +81,10 @@ def submergesort(mylist,holdlist,left,right):
 
 def bmerge(mylist, holdlist, l1, l2):
 
-    for i in range(l1[0], l1[1] + 1):
-        holdlist[i] = mylist[i]
+    # for i in range(l1[0], l1[1] + 1):
+    #     holdlist[i] = mylist[i]
+
+    holdlist[l1[0]:l1[1]+1] = mylist[l1[0]:l1[1]+1]
 
     l1curr = l1[0]
     l2curr = l2[0]
@@ -104,46 +106,3 @@ def bmerge(mylist, holdlist, l1, l2):
         curr += 1
 
     return (l1[0], l2[1])
-
-# altmergesort([5,4,3,2,1])
-
-# def submergesort(mylist, left,right, final_length=False):
-#     if not final_length:
-#         final_length = len(mylist)
-
-#     if left == right:
-#         return mylist[left]
-
-#     mid = (left + right) // 2
-
-#     ml1 = submergesort(mylist, left=left, right=mid, final_length=final_length)
-#     ml2 = submergesort(mylist, left=mid+1, right=right, final_length=final_length)
-
-#     ml = bmerge(ml1, ml2)
-
-#     return ml if len(ml) < final_length else list(ml)
-
-# def bmerge(l1, l2):
-#     '''
-#     Return a sorted, merged deque of two input values or deques.
-#     '''
-#     l3 = deque()
-
-#     if isinstance(l1, int):
-#         l1 = deque([l1])
-#     if isinstance(l2, int):
-#         l2 = deque([l2])
-
-#     while l1 and l2:
-#         if l1[0] < l2[0]:
-#             l3.append(l1.popleft())
-#         else:
-#             l3.append(l2.popleft())
-
-#     while l1 and not l2:
-#         l3.append(l1.popleft())
-
-#     while l2 and not l1:
-#         l3.append(l2.popleft())
-
-#     return l3
