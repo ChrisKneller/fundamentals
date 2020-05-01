@@ -43,6 +43,8 @@ Heap sort|-|-|-|-|-|-|-
 
 ```python
 class Node:
+    """Define a node in a binary tree.
+    """
     def __init__(self, value=None, left=None, right=None):
         self.value = value # information that is being stored in the tree
         self.left = left   # the left child (subtree)
@@ -61,13 +63,52 @@ Root|No. branches|Leaves|Depth of node 7|Height of node 7|Tree height
 - A **full binary tree** is a binary tree in which each node has *exactly* zero or two children
     - A full binary tree will *always* have an odd number of nodes: 2 or 0 children for each node, plus the root
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Full_binary.svg/2560px-Full_binary.svg.png" alt="Full binary tree" width="200"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Full_binary.svg/2560px-Full_binary.svg.png" alt="Full binary tree" height="150"/>
 
 - A **complete binary tree** is a binary tree in which every level, except possibly the last, is completely filled and all nodes are as far left as possible
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Complete_binary2.svg/2880px-Complete_binary2.svg.png" alt="Complete binary tree (not full)" width="200"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Complete_binary2.svg/2880px-Complete_binary2.svg.png" alt="Complete binary tree (not full)" height="150"/>
 
 - A tree can be *full but not complete* and a tree can be *complete but not full*
+
+#### Traversals
+
+- Traversal -> traverse all -> visit the whole tree and find all of its data
+- Traversing a tree can be done **pre-order** (red), **in-order** (yellow) or **post-order** (green)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Sorted_binary_tree_ALL.svg/2560px-Sorted_binary_tree_ALL.svg.png" alt="Traversing a tree" HEIGHT="200">
+
+Method|Order of nodes
+-|-
+Pre-order (red)|F,B,A,D,C,E,G,I,H
+In-order (yellow)|A,B,C,D,E,F,G,H,I
+Post-order (green)|A,C,E,D,B,H,I,G,F
+
+```python
+def traverse_pre_order(tree):
+    """Traverse an input tree pre-order.
+    """
+    if tree:
+        print(tree.getRootVal())
+        traverse_pre_order(tree.getLeftChild())
+        traverse_pre_order(tree.getRightChild())
+        
+def traverse_in_order(tree):
+    """Traverse an input tree in-order.
+    """
+    if tree:
+        traverse_in_order(tree.getLeftChild())
+        print(tree.getRootVal())
+        traverse_in_order(tree.getRightChild())
+        
+def traverse_post_order(tree):
+    """Traverse an input tree post-order.
+    """
+    if tree:
+        traverse_post_order(tree.getLeftChild())
+        traverse_post_order(tree.getRightChild())
+        print(tree.getRootVal())
+```
 
 ### Heaps
 
