@@ -6,7 +6,7 @@ import numpy as np
 from itertools import cycle
 from performance import sorting_algorithms
 
-def plot(fname='sorting_comparison-5'):
+def plot(fname='sorting_comparison'):
 
     csv_folder = 'csv'
     plots_folder = 'plots'

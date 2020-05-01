@@ -23,7 +23,7 @@ sorting_algorithms = {
 # TODO: parallelize
 
 def test_sort_algos(
-    output_file: str = 'csv/sorting_comparison-5.csv', 
+    output_file: str = 'csv/sorting_comparison.csv', 
     write_method: str = 'a',
     start = 0,
     num_lists: int = 500,
