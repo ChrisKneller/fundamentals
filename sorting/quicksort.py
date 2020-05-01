@@ -4,7 +4,7 @@ def quicksort(iterable):
     '''
     Return a new list containing all items from the iterable in ascending order.
 
-    This version takes the pivot to be the n//2th item in a string of length n+1.
+    This version takes the pivot to be the n//2th item in an iterable of length n+1.
     '''
     low = 0
     high = len(iterable)-1
