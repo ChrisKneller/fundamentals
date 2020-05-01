@@ -163,7 +163,7 @@ def traverse_post_order(tree):
 - However, it will have a *guaranteed worst case runtime* of O(log *n*) for **searching**, **insertion** and **deletion**
 - It is guaranteed to have a maximum height of 2 log(*n* + 1)
 - Any path from a given node to any of its descendant NIL nodes goes through the same number of black nodes
-- 
+- Good for when data will be regularly modified and accessed
 
 #### Quick reference tree table
 
