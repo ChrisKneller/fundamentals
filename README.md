@@ -175,6 +175,35 @@ Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*
 
 ### Heaps
 
+#### Priority queues
+
+- Used when you will need to get the most important item in a data structure (imagine patients checking into A&E; it doesn't work using FIFO)
+- Three basic operations:
+    - ```insert(i,p)``` - add an element i with priority p
+    - ```pop()``` - remove and return the item with the highest priority
+    - ```peek()``` - look at the value of the highest priority element without changing the queue
+- The best runtime is achieved by organizing data in a binary tree format, giving a runtime of O(log *n*) vs O(*n*) in other implementations
+
+#### Binary heaps
+
+![Binary max heap](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/320px-Max-Heap.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Min-heap.png" alt="Binary min heap" width="320">
+
+A max heap and min heap, respectively
+
+- A binary heap is considered the best structure for priority queues
+- Binary heaps are binary trees where the value of each node must be greater than or equal to the values of its left and right children (for a max heap; it is the other way round for a min heap)
+- As a result, the highest priority item is always at the top of the heap
+- A binary heap is *complete*
+- A node with index *n* conventinally has child nodes of 2*n* and 2*n*+1; i.e. the top node has index (not priority) 1 and its children have index 2 and 3
+- To **insert** an item:
+    - Add it to the first open position in the binary heap
+    - Bubble it up to the top until there are no elements above it with a higher priority (i.e. it is at the root or below a higher priority node)
+- The best way to **construct** a heap is to:
+    - Randomly insert all values in an arbitrary order to get a random heap
+    - "Max heapify" by bubbling up the nodes at each position, starting at the leaves and working up
+    - Constructing a binary heap in this way takes a runtime of O(*n*)
+
 ### Vectors / ArrayLists
 
 ### Hash Tables
