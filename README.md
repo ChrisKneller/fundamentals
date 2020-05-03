@@ -181,7 +181,7 @@ def traverse_post_order(tree):
 - They are very useful for balancing trees for performance
 - It may be easier to think of them as "clockwise" (**right**) and "anticlockwise" (**left**) rotations
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tree_rotation.png" alt="Left and right rotations on a binary tree" height="200">
+![Tree rotations](https://upload.wikimedia.org/wikipedia/commons/2/23/Tree_rotation.png)
 
 - It doesn't matter whether the top node in a rotation has parents
 - Rotations can therefore be used at any level of a tree
@@ -197,7 +197,7 @@ def traverse_post_order(tree):
 
 #### Red-black BS trees
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/750px-Red-black_tree_example.svg.png" alt="Red-black tree" height="200">
+![Red-black trees](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/320px-Red-black_tree_example.svg.png)
 
 - Red-black trees are also self-balancing and are less strict than AVL trees
 - The result is a slightly slower average lookup, but faster insertion and deletion
