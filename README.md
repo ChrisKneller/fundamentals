@@ -51,6 +51,8 @@ Shell sort|-|-|-|-|-|-|-
 [Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
 [Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|No|Yes|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/heapsort.py)|-
 
+\* Further information can be seen in the sections dedicated to each sort.
+
 ### Trees
 
 Tree type|Worst:|Search|Insert|Delete|Avg:|Search|Insert|Delete
@@ -59,8 +61,6 @@ BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
 AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
 Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
 Binary heap||O(*n*)|O(log *n*)|O(log *n*)||O(*n*)|O(1)|O(log *n*)
-
-\* Further information can be seen in the sections dedicated to each sort.
 
 ### Comparison of implementations
 ![Sorting comparison scatter plot](/sorting/plots/sorting_comparison.png)
