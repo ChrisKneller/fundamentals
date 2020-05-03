@@ -246,7 +246,7 @@ A max heap and min heap, respectively
 
 ## Algorithms
 
-### Bread-First Search
+### Breadth-First Search
 
 ### Depth-First Search
 
