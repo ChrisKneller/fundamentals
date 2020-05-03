@@ -2,40 +2,40 @@
 
 A repo to keep track of my understanding of some CS fundamentals. I will be adding notes and implementations where applicable.
 
-I hope that this will eventually function as an all-in-one reference and learning page.
+I hope that this will eventually function as an all-in-one reference and learning page for others.
 
 ## Contents 
-- Quick reference tables
-    - Sorting algorithms
-    - Trees
-    - Comparison of implementations
-- Data structures
-    - Linked Lists
-    - Trees, Tries & Graphs
-        - Binary trees
-        - Traversals
-        - Binary search trees
-        - Tree rotations
-        - AVL trees
-        - Red-black trees
-    - Heaps
-        - Priority queues
-        - Binary heaps
-    - Vectors / ArrayLists
-    - Hash Tables
-- Algorithms
-    - Bread-First Search
-    - Depth-First Search
-    - Binary Search
-    - Merge Sort
-    - Quick Sort
-    - Heap sort
-- Concepts
-    - Bit Manipulation
-    - Memory (Stack vs. Heap)
-    - Recursion
-    - Dynamic Programming
-    - Big O Time & Space
+- [Quick reference tables](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-reference-tables)
+    - [Sorting algorithms](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#sorting-algorithms)
+    - [Trees](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#trees)
+    - [Comparison of implementations](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#comparison-of-implementations)
+- [Data structures](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#data-structures)
+    - [Linked Lists](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#linked-lists)
+    - [Trees, Tries & Graphs](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#trees-tries--graphs)
+        - [Binary trees](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-trees)
+        - [Traversals](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#traversals)
+        - [Binary search trees](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-search-trees)
+        - [Tree rotations](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#tree-rotations)
+        - [AVL trees](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#avl-trees)
+        - [Red-black trees](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#red-black-bs-trees)
+    - [Heaps](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heaps)
+        - [Priority queues](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#priority-queues)
+        - [Binary heaps](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-heaps)
+    - [Vectors / ArrayLists](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#vectors--arraylists)
+    - [Hash Tables](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#hash-tables)
+- [Algorithms](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#algorithms)
+    - [Bread-First Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#breadth-first-search)
+    - [Depth-First Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#depth-first-search)
+    - [Binary Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-search)
+    - [Merge Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)
+    - [Quick Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)
+    - [Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)
+- [Concepts](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#concepts)
+    - [Bit Manipulation](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#bit-manipulation)
+    - [Memory (Stack vs. Heap)](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#memory-stack-vs-heap)
+    - [Recursion](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#recursion)
+    - [Dynamic Programming](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#dynamic-programming)
+    - [Big O Time & Space](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#big-o-time--space)
 
 ## Quick reference tables
 
@@ -62,7 +62,7 @@ Binary heap||O(*n*)|O(log *n*)|O(log *n*)||O(*n*)|O(1)|O(log *n*)
 
 \* Further information can be seen in the sections dedicated to each sort.
 
-#### Comparison of implementations
+### Comparison of implementations
 ![Sorting comparison scatter plot](/sorting/plots/sorting_comparison.png)
 
 ## Data structures
