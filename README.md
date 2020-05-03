@@ -24,7 +24,7 @@ I hope that this will eventually function as an all-in-one reference and learnin
     - [Vectors / ArrayLists](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#vectors--arraylists)
     - [Hash Tables](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#hash-tables)
 - [Algorithms](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#algorithms)
-    - [Bread-First Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#breadth-first-search)
+    - [Breadth-First Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#breadth-first-search)
     - [Depth-First Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#depth-first-search)
     - [Binary Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-search)
     - [Merge Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)
