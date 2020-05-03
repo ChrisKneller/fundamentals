@@ -29,7 +29,7 @@ I hope that this will eventually function as an all-in-one reference and learnin
     - [Binary Search](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-search)
     - [Merge Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)
     - [Quick Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)
-    - [Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)
+    - [Heap Sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)
 - [Concepts](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#concepts)
     - [Bit Manipulation](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#bit-manipulation)
     - [Memory (Stack vs. Heap)](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#memory-stack-vs-heap)
@@ -301,7 +301,7 @@ O(*n* log *n*)|O(2*n* ln *n*)|O(½*n*<sup>2</sup>)
 
 [Python, pivot at random point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py#L17)
 
-### Heap sort
+### Heap Sort
 
 #### Summary
 
