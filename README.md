@@ -16,6 +16,15 @@ Shell sort|-|-|-|-|-|-|-
 [Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(2*n* ln *n*)|O(½ *n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
 Heap sort|-|-|-|-|-|-|-
 
+### Trees
+
+Tree type|Worst:|Search|Insert|Delete|Avg:|Search|Insert|Delete
+:-|-|:-:|:-:|:-:|-|:-:|:-:|:-:
+BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
+AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
+Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
+Binary heap||O(*n*)|O(log *n*)|(O(log *n*)||O(*n*)|O(1)|O(log *n*)
+
 \* Further information can be seen in the sections dedicated to each sort.
 
 #### Comparison of implementations
@@ -164,14 +173,6 @@ def traverse_post_order(tree):
 - It is guaranteed to have a maximum height of 2 log(*n* + 1)
 - Any path from a given node to any of its descendant NIL nodes goes through the same number of black nodes
 - Good for when data will be regularly modified and accessed
-
-#### Quick reference tree table
-
-Tree type|Worst case:|Search|Insert|Delete|Average case:|Search|Insert|Delete
-:-|-|:-:|:-:|:-:|-|:-:|:-:|:-:
-BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
-AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
-Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
 
 ### Heaps
 
