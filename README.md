@@ -2,6 +2,41 @@
 
 A repo to keep track of my understanding of some CS fundamentals. I will be adding notes and implementations where applicable.
 
+I hope that this will eventually function as an all-in-one reference and learning page.
+
+## Contents 
+- Quick reference tables
+    - Sorting algorithms
+    - Trees
+    - Comparison of implementations
+- Data structures
+    - Linked Lists
+    - Trees, Tries & Graphs
+        - Binary trees
+        - Traversals
+        - Binary search trees
+        - Tree rotations
+        - AVL trees
+        - Red-black trees
+    - Heaps
+        - Priority queues
+        - Binary heaps
+    - Vectors / ArrayLists
+    - Hash Tables
+- Algorithms
+    - Bread-First Search
+    - Depth-First Search
+    - Binary Search
+    - Merge Sort
+    - Quick Sort
+    - Heap sort
+- Concepts
+    - Bit Manipulation
+    - Memory (Stack vs. Heap)
+    - Recursion
+    - Dynamic Programming
+    - Big O Time & Space
+
 ## Quick reference tables
 
 ### Sorting algorithms
@@ -23,7 +58,7 @@ Tree type|Worst:|Search|Insert|Delete|Avg:|Search|Insert|Delete
 BST||O(*n*)|O(*n*)|O(*n*)||O(log *n*)|O(*n*)|O(*n*)
 AVL||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
 Red-black BST||O(log *n*)|O(log *n*)|O(log *n*)||O(log *n*)|O(log *n*)|O(log *n*)
-Binary heap||O(*n*)|O(log *n*)|(O(log *n*)||O(*n*)|O(1)|O(log *n*)
+Binary heap||O(*n*)|O(log *n*)|O(log *n*)||O(*n*)|O(1)|O(log *n*)
 
 \* Further information can be seen in the sections dedicated to each sort.
 
