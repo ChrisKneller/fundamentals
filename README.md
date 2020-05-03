@@ -12,9 +12,9 @@ Selection sort|-|-|-|-|-|-|-
 Insertion sort|-|-|-|-|-|-|-
 Bubble sort|-|-|-|-|-|-|-
 Shell sort|-|-|-|-|-|-|-
-[Merge sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)|O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
-[Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(2*n* ln *n*)|O(½ *n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
-Heap sort|-|-|-|-|-|-|-
+[Merge sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
+[Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
+[Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|No|Yes|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/heapsort.py)|-
 
 ### Trees
 
@@ -233,7 +233,7 @@ Best case|Average case|Worst case
 O(½ *n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
 
 #### Diagram
-![](https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg" alt="Merge sort animation" height="400">
 
 #### My implementation(s)
 [Python, using deques](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)
@@ -265,6 +265,34 @@ O(*n* log *n*)|O(2*n* ln *n*)|O(½*n*<sup>2</sup>)
 [Python, pivot at mid point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)
 
 [Python, pivot at random point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py#L17)
+
+### Heap sort
+
+#### Summary
+
+Heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. 
+
+- Put all the numbers into an array in an arbitrary order.
+- Organize the binary heap one element at a time by repeatedly swapping larger children with smaller parents.
+- Switch the root of the heap with the node furthest down.
+- Remove what was previously the root from the heap. Store it as the smallest of the already sorted numbers.
+- Repeat the previous three steps until the heap is empty. The list of stored numbers will be sorted.
+
+#### Notes
+- Utilises a [binary heap](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#binary-heaps)
+- Not stable
+- Does sort in-place
+
+#### Key details
+Best case|Average case|Worst case
+:-:|:-:|:-:
+O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
+
+#### Diagram
+![](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
+
+#### My implementation(s)
+[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/heapsort.py)
 
 ## Concepts
 
