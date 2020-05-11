@@ -43,13 +43,13 @@ I hope that this will eventually function as an all-in-one reference and learnin
 
 Algorithm|Best case|Average case|Worst case|Stable|In place|Code|Remarks
 :-|:-:|:-:|:-:|:-:|:-:|:-:|:-
-Selection sort|-|-|-|-|-|-|-
-Insertion sort|-|-|-|-|-|-|-
-Bubble sort|-|-|-|-|-|-|-
-Shell sort|-|-|-|-|-|-|-
-[Merge sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
-[Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n*<sup>2</sup>)|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
-[Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)|O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)|No|Yes|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/heapsort.py)|-
+Selection sort|*n*<sup>2</sup>|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Terrible
+Insertion sort|*n*|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Used for small or partially-sorted arrays
+Bubble sort|*n*|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Rarely useful; use insertion sort instead
+Counting sort|*n* + *k*|*n* + *k*|*n* + *k*|Yes|Yes|-|Useful for when range of values each item can take is small
+[Merge sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#merge-sort)|*n* log *n*|*n* log *n*|*n* log *n*|Yes*|No*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/mergesort.py)|-
+[Quick sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#quick-sort)|*n* log *n*|*n* log *n*|*n*<sup>2</sup>|No*|Yes*|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)|Worst case is rare
+[Heap sort](https://github.com/ChrisKneller/fundamentals/blob/master/README.md#heap-sort)|*n* log *n*|*n* log *n*|*n* log *n*|No|Yes|[Python](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/heapsort.py)|-
 
 \* Further information can be seen in the sections dedicated to each sort.
 
