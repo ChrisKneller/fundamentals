@@ -69,6 +69,8 @@ Binary heap||O(*n*)|O(log *n*)|O(log *n*)||O(*n*)|O(1)|O(log *n*)
 
 ### Linked Lists
 
+*To fill*
+
 ### Trees, Tries & Graphs
 
 #### Binary trees
@@ -242,15 +244,25 @@ A max heap and min heap, respectively
 
 ### Vectors / ArrayLists
 
+*To fill*
+
 ### Hash Tables
+
+*To fill*
 
 ## Algorithms
 
 ### Breadth-First Search
 
+*To fill*
+
 ### Depth-First Search
 
+*To fill*
+
 ### Binary Search
+
+*To fill*
 
 ### Merge Sort
 
@@ -333,10 +345,20 @@ O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
 
 ### Bit Manipulation
 
+*To fill*
+
 ### Memory (Stack vs. Heap)
+
+*To fill*
 
 ### Recursion
 
+*To fill*
+
 ### Dynamic Programming
 
+*To fill*
+
 ### Big O Time & Space
+
+*To fill*
