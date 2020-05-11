@@ -353,7 +353,29 @@ O(*n* log *n*)|O(*n* log *n*)|O(*n* log *n*)
 
 ### Recursion
 
-*To fill*
+Recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem. The same problems can be solved iteratively, but this would involve identifying the indexes and redefining them at each stage. Recursion allow you to solve such a problem without doing so.
+
+> The power of recursion evidently lies in the possibility of defining an infinite set of objects by a finite statement. In the same manner, an infinite number of computations can be described by a finite recursive program, even if this program contains no explicit repetitions.
+
+While often easier to define, one drawback of recursion is that memory usage can be harder to control.
+
+Recursive functions call on themselves until they reach a defined *base case*, where the stack of calls then begins to "unravel".
+
+#### Example
+
+```Python
+def binary_search(A, item):
+    if len(A) == 0:
+        return False
+    else:
+        middle = len(A) // 2
+        if A[middle] == item:
+            return True
+        if item < A[middle]:
+            return binary_search(A[:middle], item)
+        else:
+            return binary_search(A[middle + 1:], item)
+```
 
 ### Dynamic Programming
 
