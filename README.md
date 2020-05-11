@@ -43,7 +43,7 @@ I hope that this will eventually function as an all-in-one reference and learnin
 
 Algorithm|Best case|Average case|Worst case|Stable|In place|Code|Remarks
 :-|:-:|:-:|:-:|:-:|:-:|:-:|:-
-Selection sort|*n*<sup>2</sup>|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Terrible
+Selection sort|*n*<sup>2</sup>|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Can be useful where auxiliary memory is limited
 Insertion sort|*n*|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Used for small or partially-sorted arrays
 Bubble sort|*n*|*n*<sup>2</sup>|*n*<sup>2</sup>|Yes|Yes|-|Rarely useful; use insertion sort instead
 Counting sort|*n* + *k*|*n* + *k*|*n* + *k*|Yes|Yes|-|Useful for when range of values each item can take is small
