@@ -309,9 +309,7 @@ O(*n* log *n*)|O(2*n* ln *n*)|O(½*n*<sup>2</sup>)
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
 
 #### My implementation(s)
-[Python, pivot at mid point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)
-
-[Python, pivot at random point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py#L17)
+[Python, pivot at end point](https://github.com/ChrisKneller/fundamentals/blob/master/sorting/quicksort.py)
 
 ### Heap Sort
 
